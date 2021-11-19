@@ -6,11 +6,13 @@ add_mlir_library(IREELinalgTensorSandbox
   FuseFillIntoReduction.cpp
   LinalgTensorCodegenDriver.cpp
   LinalgTileAndFuse.cpp
+  VectorDistribution.cpp
 
   PARTIAL_SOURCES_INTENDED
   LINK_LIBS PRIVATE
   MLIRAsync
   MLIRGPUOps
+  MLIRLinalg
   MLIRLinalgTransforms
 
   DEPENDS
